@@ -1,0 +1,5 @@
+
+name: AstralisFull
+main: org.thegvsss.astralis.AstralisCore
+version: 2.0
+api-version: 1.20

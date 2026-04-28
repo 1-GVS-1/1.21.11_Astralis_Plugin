@@ -1,0 +1,15 @@
+name: AstralisFull
+main: org.thegvsss.astralis.AstralisCore
+version: 2.0
+api-version: 1.21
+
+commands:
+  astralis:
+    description: Main Astralis command
+    usage: /astralis [merchant|merchantkill|quest|coins|shop|help]
+    permission: astralis.admin
+
+permissions:
+  astralis.admin:
+    description: Admin access
+    default: op
