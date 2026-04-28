@@ -15,9 +15,10 @@ public class WeaponsGui implements InventoryHolder {
         inventory.setItem(0, SwordOfCrushing.create());
         inventory.setItem(1, EnderSword.create());
         inventory.setItem(2, Flamethrower.create());
-        inventory.setItem(3, RocketCrossbow.create());
+        inventory.setItem(3, BlastTrident.create());
         inventory.setItem(4, DragonSword.create());
         inventory.setItem(5, HellSword.create());
+        inventory.setItem(6, BlastTrident.create());
     }
 
     public void open(Player player) { player.openInventory(inventory); }
@@ -27,7 +28,7 @@ public class WeaponsGui implements InventoryHolder {
             case 0 -> player.getInventory().addItem(SwordOfCrushing.create());
             case 1 -> player.getInventory().addItem(EnderSword.create());
             case 2 -> player.getInventory().addItem(Flamethrower.create());
-            case 3 -> player.getInventory().addItem(RocketCrossbow.create());
+            case 3 -> player.getInventory().addItem(BlastTrident.create());
             case 4 -> player.getInventory().addItem(DragonSword.create());
             case 5 -> player.getInventory().addItem(HellSword.create());
         }

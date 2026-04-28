@@ -6,6 +6,7 @@ import org.thegvsss.astralis.commands.AstralisCommand;
 import org.thegvsss.astralis.economy.EconomyManager;
 import org.thegvsss.astralis.events.global.EffectsRelics;
 import org.thegvsss.astralis.gui.GuiListener;
+import org.thegvsss.astralis.items.weapons.BlastTrident;
 import org.thegvsss.astralis.listener.*;
 import org.thegvsss.astralis.quest.QuestManager;
 import org.thegvsss.astralis.shop.MerchantShopListener;
@@ -46,7 +47,6 @@ public class AstralisCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new GravityFeatherAbility(this), this);
         getServer().getPluginManager().registerEvents(new EnderSwordAbility(), this);
         getServer().getPluginManager().registerEvents(new FlamethrowerAbility(this), this);
-        getServer().getPluginManager().registerEvents(new RocketCrossbowAbility(this), this);
         getServer().getPluginManager().registerEvents(new SwordOfCrushingAbility(this), this);
 
         // Abilities novas
@@ -55,6 +55,7 @@ public class AstralisCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ForbidenTotemAbility(this), this);
         getServer().getPluginManager().registerEvents(new PhoenixFeatherAbility(this), this);
         getServer().getPluginManager().registerEvents(new TimeShardAbility(this), this);
+        getServer().getPluginManager().registerEvents(new BlastTridentAbility(this), this);
 
         // Quests & Economia
         getServer().getPluginManager().registerEvents(questManager, this);

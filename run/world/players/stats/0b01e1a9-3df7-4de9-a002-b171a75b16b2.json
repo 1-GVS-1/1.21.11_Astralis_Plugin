@@ -1,7 +1,52 @@
 {
   "stats": {
+    "minecraft:killed_by": {
+      "minecraft:skeleton": 2,
+      "minecraft:spider": 1,
+      "minecraft:iron_golem": 5,
+      "minecraft:drowned": 1
+    },
+    "minecraft:broken": {
+      "minecraft:diamond_chestplate": 1
+    },
+    "minecraft:custom": {
+      "minecraft:damage_resisted": 1920,
+      "minecraft:time_since_rest": 12863,
+      "minecraft:walk_one_cm": 119623,
+      "minecraft:leave_game": 4,
+      "minecraft:walk_under_water_one_cm": 3120,
+      "minecraft:mob_kills": 191,
+      "minecraft:damage_taken": 48622,
+      "minecraft:boat_one_cm": 492,
+      "minecraft:play_time": 177836,
+      "minecraft:damage_dealt": 41354,
+      "minecraft:jump": 805,
+      "minecraft:time_since_death": 12809,
+      "minecraft:drop": 18,
+      "minecraft:sprint_one_cm": 39204,
+      "minecraft:fall_one_cm": 29098,
+      "minecraft:total_world_time": 177836,
+      "minecraft:swim_one_cm": 3169,
+      "minecraft:fly_one_cm": 169368,
+      "minecraft:interact_with_anvil": 24,
+      "minecraft:walk_on_water_one_cm": 3355,
+      "minecraft:crouch_one_cm": 1522,
+      "minecraft:sneak_time": 858,
+      "minecraft:deaths": 13
+    },
+    "minecraft:crafted": {
+      "minecraft:coal": 9
+    },
+    "minecraft:mined": {
+      "minecraft:short_grass": 2,
+      "minecraft:oak_leaves": 9,
+      "minecraft:dirt": 1,
+      "minecraft:birch_leaves": 1,
+      "minecraft:grass_block": 3
+    },
     "minecraft:used": {
       "minecraft:netherite_helmet": 1,
+      "minecraft:trident": 4,
       "minecraft:netherite_sword": 250,
       "minecraft:anvil": 3,
       "minecraft:blaze_spawn_egg": 30,
@@ -12,61 +57,10 @@
       "minecraft:magma_cube_spawn_egg": 15,
       "minecraft:firework_rocket": 1
     },
-    "minecraft:killed_by": {
-      "minecraft:skeleton": 2,
-      "minecraft:spider": 1,
-      "minecraft:iron_golem": 5,
-      "minecraft:drowned": 1
-    },
-    "minecraft:broken": {
-      "minecraft:diamond_chestplate": 1
-    },
-    "minecraft:killed": {
-      "minecraft:iron_golem": 11,
-      "minecraft:pig": 3,
-      "minecraft:villager": 7,
-      "minecraft:parrot": 1,
-      "minecraft:spider": 1,
-      "minecraft:zombie": 2,
-      "minecraft:wither": 2,
-      "minecraft:creeper": 1,
-      "minecraft:chicken": 3,
-      "minecraft:cow": 5,
-      "minecraft:drowned": 2,
-      "minecraft:wolf": 1,
-      "minecraft:magma_cube": 43,
-      "minecraft:blaze": 103
-    },
-    "minecraft:mined": {
-      "minecraft:short_grass": 2,
-      "minecraft:oak_leaves": 9,
-      "minecraft:dirt": 1,
-      "minecraft:birch_leaves": 1,
-      "minecraft:grass_block": 3
-    },
-    "minecraft:custom": {
-      "minecraft:damage_resisted": 1920,
-      "minecraft:time_since_rest": 6863,
-      "minecraft:walk_one_cm": 118482,
-      "minecraft:leave_game": 4,
-      "minecraft:walk_under_water_one_cm": 2145,
-      "minecraft:mob_kills": 191,
-      "minecraft:damage_taken": 48622,
-      "minecraft:boat_one_cm": 492,
-      "minecraft:play_time": 171836,
-      "minecraft:damage_dealt": 41354,
-      "minecraft:jump": 788,
-      "minecraft:time_since_death": 6809,
-      "minecraft:drop": 18,
-      "minecraft:sprint_one_cm": 38204,
-      "minecraft:fall_one_cm": 29098,
-      "minecraft:total_world_time": 171836,
-      "minecraft:fly_one_cm": 136374,
-      "minecraft:interact_with_anvil": 24,
-      "minecraft:walk_on_water_one_cm": 2146,
-      "minecraft:crouch_one_cm": 1359,
-      "minecraft:sneak_time": 815,
-      "minecraft:deaths": 13
+    "minecraft:dropped": {
+      "minecraft:netherite_sword": 4,
+      "minecraft:gold_ingot": 66,
+      "minecraft:coal": 535
     },
     "minecraft:picked_up": {
       "minecraft:egg": 1,
@@ -89,13 +83,21 @@
       "minecraft:gunpowder": 2,
       "minecraft:netherite_sword": 5
     },
-    "minecraft:crafted": {
-      "minecraft:coal": 9
-    },
-    "minecraft:dropped": {
-      "minecraft:netherite_sword": 4,
-      "minecraft:gold_ingot": 66,
-      "minecraft:coal": 535
+    "minecraft:killed": {
+      "minecraft:iron_golem": 11,
+      "minecraft:pig": 3,
+      "minecraft:villager": 7,
+      "minecraft:parrot": 1,
+      "minecraft:spider": 1,
+      "minecraft:zombie": 2,
+      "minecraft:wither": 2,
+      "minecraft:creeper": 1,
+      "minecraft:chicken": 3,
+      "minecraft:cow": 5,
+      "minecraft:drowned": 2,
+      "minecraft:wolf": 1,
+      "minecraft:magma_cube": 43,
+      "minecraft:blaze": 103
     }
   },
   "DataVersion": 4790

@@ -24,31 +24,35 @@ public class EnderSwordAbility implements Listener {
 
         e.setCancelled(true);
 
-        // BUG CORRIGIDO: getTargetBlockExact pode retornar null
-        Block target = p.getTargetBlockExact(15);
+        Block targetBlock = p.getTargetBlockExact(15);
 
-        if (target == null) {
+        if (targetBlock == null) {
             p.sendMessage("§cNenhum bloco no alcance para teleportar!");
             return;
         }
 
-        Location dest = target.getLocation().add(0.5, 1, 0.5);
+        Location target = targetBlock.getLocation();
+        World world = p.getWorld();
 
-        // Garante que não teleporta dentro de bloco sólido
-        if (dest.getBlock().getType().isSolid()
-                || dest.clone().add(0, 1, 0).getBlock().getType().isSolid()) {
-            p.sendMessage("§cBloco obstruído! Tente outro local.");
+        // 🔥 posição segura (resolve bug do 319 e blocos bugados)
+        Location safe = world.getHighestBlockAt(target).getLocation().add(0.5, 1, 0.5);
+
+        // segurança extra (evitar sufocamento)
+        if (safe.getBlock().getType().isSolid()
+                || safe.clone().add(0, 1, 0).getBlock().getType().isSolid()) {
+            p.sendMessage("§cDestino obstruído!");
             return;
         }
 
-        // FX de saída
-        p.getWorld().spawnParticle(Particle.PORTAL, p.getLocation(), 30, 0.3, 1, 0.3, 0.1);
-        p.getWorld().playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1f, 1f);
+        // FX saída
+        world.spawnParticle(Particle.PORTAL, p.getLocation(), 30, 0.3, 1, 0.3, 0.1);
+        world.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1f, 1f);
 
-        p.teleport(dest);
+        // TP
+        p.teleport(safe);
 
-        // FX de chegada
-        p.getWorld().spawnParticle(Particle.PORTAL, dest, 30, 0.3, 1, 0.3, 0.1);
+        // FX chegada
+        world.spawnParticle(Particle.PORTAL, safe, 30, 0.3, 1, 0.3, 0.1);
         p.sendActionBar(Component.text("§5⚡ Teletransporte!"));
 
         CooldownManager.setCooldown(p, "ender_sword", 5);
