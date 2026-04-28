@@ -7,7 +7,6 @@ commands:
   astralis:
     description: Main Astralis command
     usage: /astralis [merchant|merchantkill|quest|coins|shop|help]
-    permission: astralis.admin
 
 permissions:
   astralis.admin:
